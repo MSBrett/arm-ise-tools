@@ -1,6 +1,8 @@
 # arm-ise-tools
 An addon for the Powershell ISE to simplify working with Azure Resource manager
 
+![alt text](/ARMToolsMenu.jpg "ARM Tools Menu")
+
 ##Setup:
 
 + Open the Powershell ISE (do not launch it as admin)
