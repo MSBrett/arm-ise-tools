@@ -189,7 +189,7 @@ function StopRGVMs()
         $vms = Get-AzureRmVm -ResourceGroupName $objListBox2.SelectedItem -Status
         foreach ($vm in $vms)
         {
-            if (!$vm.PowerState -match "deallocated")
+            if ($vm.PowerState -notmatch "deallocated")
             {
                 Write-host ("Stopping VM " + $vm.Name)
                 $vm | Stop-AzureRmVM -Force
